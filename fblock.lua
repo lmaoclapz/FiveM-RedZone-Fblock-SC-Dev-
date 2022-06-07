@@ -55,7 +55,6 @@ local ConfigFBlock = {
         if #(plyCoords - location) < (v.diameter) - (v.diameter / 150) then
           if (not inside_zone) then
             local temp_append = ""
-            --ShowInfo("You are ~r~not allowed~w~ to do any ~r~violent~w~ or ~r~illegal~w~ roleplay in this area.")
             inside_zone = true
             if (v.customrestrictions.enabled and v.customrestrictions.loop == false) then
               ConfigFBlock[k].customrestrictions.run(v)
@@ -109,9 +108,3 @@ local ConfigFBlock = {
       Citizen.Wait(4)
     end
   end)
-
-                                 ██████╗  █████╗       ██████╗███████╗██╗   ██╗   
-                              ██╔════╝██╔══██╗      ██╔══██╗██╔════╝██║   ██║   
-                              ╚█████╗ ██║  ╚═╝█████╗██║  ██║█████╗  ╚██  ██╔╝    
-                               ╚═══██╗██║  ██╗╚════╝██║  ██║██╔══╝   ╚████╔╝        
-                              ██████╔╝╚█████╔╝      ██████╔╝███████   ╚██╔╝  
